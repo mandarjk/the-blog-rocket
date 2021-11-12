@@ -1,0 +1,129 @@
+#formr{
+	margin: 5px;
+	border-radius: 5px;
+	background-color: #f2f2f2;
+	padding: 40px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);	
+}
+
+#forms{
+	margin: 5px;
+	border-radius: 5px;
+	background-color: #f2f2f2;
+	padding: 40px;
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+#formdiv{
+    margin: 5%;
+	width: 40%;
+    overflow: hidden;
+    float: left;
+}
+
+#formdiv2{
+    margin: 5%;
+	width: 40%;
+    float: right;
+    overflow: hidden;
+}
+
+#formdiv label{
+	margin: 8px;
+}
+
+#formdiv p{
+    margin: 2px;
+    padding: 5px;
+    background-color: #ffcc00;
+    border-radius: 5px;
+}
+
+#formdiv2 label{
+	margin: 8px;
+}
+
+#formdiv2 p{
+    margin: 2px;
+    padding: 5px;
+    background-color: #ffcc00;
+    border-radius: 5px;
+}
+
+#formdiv2 #succ{
+    margin: 2px;
+    padding: 5px;
+    background-color:#99cc33;
+    border-radius: 5px;
+}
+
+
+
+#formdiv input[type=text], select {
+  width: 100%;
+  padding: 12px;
+  margin: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+#formdiv input[type=email], select {
+    width: 100%;
+    padding: 12px;
+    margin: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+
+#formdiv2 input[type=email], select {
+    width: 100%;
+    padding: 12px;
+    margin: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+
+#formdiv input[type=password], select {
+  width: 100%;
+  padding: 12px;
+  margin: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+#formdiv2 input[type=password], select {
+    width: 100%;
+    padding: 12px;
+    margin: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+  
+#formdiv #signup{
+    background-color: #f44336;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+#formdiv2 #signin{
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}

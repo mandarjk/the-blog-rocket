@@ -1,0 +1,95 @@
+#dash{
+    margin: 30px;
+    padding: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+}
+
+#dash h1{
+    font-family: "Arial Black", sans-serif;
+    background-color: black;
+    color: white;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+#dash h2{
+    font-family: "Arial Black", sans-serif;
+    margin-left: 20px;
+}
+
+
+#article{
+	margin: 20px;
+	border-radius: 5px;
+	background-color: #f2f2f2;
+	padding: 40px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);	
+}
+
+#article label{
+	margin: 8px;
+}
+
+
+#article input[type=text], select {
+    width: 100%;
+    padding: 12px;
+    margin: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+  
+#article #post{
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+#logout{
+    margin-top: 20px;
+    border-radius: 5px;
+    padding: 15px;
+    background-color: #f44336;
+    border: none;
+}
+
+#logout a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+#edit{
+    margin-top: 20px;
+    border-radius: 5px;
+    padding: 15px;
+    background-color: #008CBA;
+    border: none;
+}
+
+#edit a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+#feed{
+    margin-top: 20px;
+    border-radius: 5px;
+    padding: 15px;
+    background-color: #555555;
+    border: none;
+}
+
+#feed a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/card.css" />
+    <link rel="stylesheet" href="/css/dash.css" />
+    <title>Blog Rocket</title>
+</head>
+<body>
+    <%- include('header'); -%>
+    <div id="dash">
+        <h1>Dashboard</h1>
+        <h2>Welcome <%=user.name%></h2>
+        <form id="article" method="post" action="/articles/posts">
+            <label>Post Micro Blog :</label>
+            <input type="text" id="title" name="title" maxlength="50" placeholder="title">
+            <input type="text" id="mbody" name="mbody" maxlength="160" placeholder="body">
+            <button id="post">Post</button>
+            <label>Note :The Title accepts 50 character and body accepts 160 characters</label>
+        </form>
+        <button id="logout"><a href="/articles/logout">Logout</a></button>
+        <button id="edit"><a href="/edit">Delete Post</a></button>
+        <button id="feed"><a href="/feed">Feed</a></button>
+    </div>
+
+</body>
+</html>
