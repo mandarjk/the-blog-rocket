@@ -1,5 +1,6 @@
 #dash{
-    margin: 30px;
+    width: 80%;
+    margin: auto;
     padding: 10px;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
@@ -31,16 +32,47 @@
 	margin: 8px;
 }
 
-
-#article input[type=text], select {
-    width: 100%;
+#article #mbody{
+    width: 50%;
+    height: 100px;
     padding: 12px;
     margin: 8px;
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
+    font-family: Helvetica;
 }
-  
+
+#article #title{
+    width: 50%;
+    padding: 12px;
+    height: 50px;
+    margin: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-family: Helvetica;
+}
+
+#dash #article #nameinit{
+    border-radius: 50%;
+    margin: auto;
+    margin-right: 50px;
+    width: 200px;
+    height: 200px;
+    float: right;
+    background-color: #4267B2;
+}
+
+#dash #nameinit #init{
+    margin: auto;
+    width: 50%;
+    margin-top: 20%;
+    text-align: center;
+    font-size: 80px;
+    color: white;
+}
+
 #article #post{
     background-color: #4CAF50;
     border: none;
@@ -50,6 +82,8 @@
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
+    margin: 8px;
+    cursor: pointer;
 }
 
 #logout{

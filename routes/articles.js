@@ -58,7 +58,7 @@ router.post('/users',async(req,res)=>{
     });
     
     try{
-        console.log(ubase);
+        //console.log(ubase);
         await ubase.save();
         req.flash('success_msg','You are Register Successfully  Now Login');
         res.redirect('/sign');
@@ -77,15 +77,29 @@ router.post('/verify',(req,res,next)=>{
 });
 
 router.post('/posts',async (req,res)=>{
+    //charcter in body check = 160
+    var txt = req.body.mbody;
+    txt = txt.substring(0,160);
+    var text = txt.substring(0,90);
+    //console.log(text.length);
+    var text2 = txt.substring(90);
+    //console.log(text2.length);
+    var textarray = [text,text2]
+    var textbody =textarray.join("\n");
+
+    //charcter in title check = 50
+    var titletxt = req.body.title;
+    titletxt = titletxt.substring(0,50);
+
     var art = new article({
         name:req.user.name,
         email:req.user.email,
         date:new Date(),
-        title:req.body.title,
-        body:req.body.mbody
+        title:titletxt,
+        body:textbody
     });
     try{
-        console.log(art);
+        //console.log(art);
         await art.save();
         req.flash('success_msg','Successfully posted');
         res.redirect('/feed');
@@ -100,7 +114,7 @@ router.get('/delete/:id',async(req,res)=>{
     const user = await article.find({_id:req.params.id});
     article.deleteOne({ _id: req.params.id },(err)=>{
         if(err) console.log(err);
-        console.log("Successful deletion");
+        //console.log("Successful deletion");
     });
     req.flash('success_msg','Successful deletion')
     res.redirect('/edit');
