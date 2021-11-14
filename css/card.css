@@ -13,12 +13,14 @@
 #cards h2{
     margin: 10px;
     padding: 2px;
+    overflow-wrap: break-word;
 }
 
 
 #cards p{
     margin: 10px;
     padding: 5px;
+    overflow-wrap: break-word;
 }
 
 #cards pre{
@@ -26,6 +28,9 @@
     padding: 5px;
     font-size: 20px;
     font-family: Helvetica;
+    overflow-x: auto;
+    white-space: pre-wrap;
+    overflow-wrap: break-word;
 }
 
 
@@ -45,4 +50,5 @@
     text-decoration: none;
     color: white;
     font-size: 20px;
+    cursor: pointer;
 }

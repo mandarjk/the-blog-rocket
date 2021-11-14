@@ -80,23 +80,17 @@ router.post('/posts',async (req,res)=>{
     //charcter in body check = 160
     var txt = req.body.mbody;
     txt = txt.substring(0,160);
-    var text = txt.substring(0,90);
-    //console.log(text.length);
-    var text2 = txt.substring(90);
-    //console.log(text2.length);
-    var textarray = [text,text2]
-    var textbody =textarray.join("\n");
-
-    //charcter in title check = 50
+    
+    //charcter in title check = 30
     var titletxt = req.body.title;
-    titletxt = titletxt.substring(0,50);
+    titletxt = titletxt.substring(0,30);
 
     var art = new article({
         name:req.user.name,
         email:req.user.email,
         date:new Date(),
         title:titletxt,
-        body:textbody
+        body:txt
     });
     try{
         //console.log(art);

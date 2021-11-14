@@ -15,9 +15,9 @@
         <form id="article" method="post" action="/articles/posts">
             <label>Post Micro Blog :</label><br>
             <div id="nameinit"><p id="init"><%=user.name.substring(0,1)%></p></div>
-            <textarea id="title" name="title" maxlength="50" placeholder="title"></textarea>
+            <textarea id="title" name="title" maxlength="30" placeholder="title"></textarea>
             <textarea id="mbody" name="mbody" maxlength="160" placeholder="body"></textarea><br>
-            <label>Note :The Title accepts 50 character and body accepts 160 characters</label><br>
+            <label>Note :The Title accepts 30 character and body accepts 160 characters</label><br>
             <button id="post">Post</button>
         </form>
         <button id="logout"><a href="/articles/logout">Logout</a></button>
