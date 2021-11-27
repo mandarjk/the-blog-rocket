@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/card.css" />
+    <title>The Blog Rocket</title>
+</head>
+<body>
+    <%- include('header'); -%>
+        <div id="cards">
+            <h2>User Name : <%= name.name%></h2>
+            <p>Date of join : <%= name.date%></p>
+            <p>email : <%= name.email%></p>                
+        </div>
+        <h2 style="margin:80px"> Posts : </h2>
+        <% if(success_msg !=''){%>
+            <p id="succ"><%= success_msg %></p>
+        <%}%>
+            <% user.forEach(user=> {%>
+                <div id="cards">
+                    <h2><%= user.title%></h2>
+                    <p>Date : <%= user.date%></p>
+                    <p>Post By : <%= user.name%></p>
+                    <pre><%= user.body%></pre>
+                </div>
+            <% }); %> 
+</body>
+</html>

@@ -72,7 +72,13 @@ app.get('/dashboard',ensureAuthenticated,async(req,res)=>{
     res.render('uindex',{user:req.user});
     
 });
-   
+
+//profile
+
+app.get('/profile/:name',ensureAuthenticated,async(req,res)=>{
+    const user = await article.find({email:req.user.email}).sort({date:'descending'});
+    res.render('profile',{user:user,name:req.user});
+})
 
 //edit post
 app.get('/edit',ensureAuthenticated,async(req,res)=>{

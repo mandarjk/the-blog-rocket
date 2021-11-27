@@ -15,6 +15,7 @@
 	padding: 14px;
 	list-style-type: none;
 	background-color: black;
+	overflow: hidden;
 }
 
 #navlist label{
@@ -43,4 +44,3 @@
 	background-color: DodgerBlue;
 	color: white;
 }
-
